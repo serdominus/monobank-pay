@@ -225,5 +225,23 @@ class Payment extends RequestBuilder
 
         $this->getDataFromGuzzleResponse($response);
     }
+     /**
+     * Фіскальний чек
+     * @param string $invoiceId ID рахунку
+     * @link https://api.monobank.ua/docs/acquiring.html#/paths/~1api~1merchant~1invoice~1fiscal-checks?invoiceId={invoiceId}/get
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Exception
+     */
+    public function fiscalchecks(string $invoiceId): array
+    {
+        $response = $this->client->getClient()->request('GET','/api/merchant/invoice/fiscal-checks',[
+            \GuzzleHttp\RequestOptions::QUERY => [
+                'invoiceId' => $invoiceId
+            ]
+        ]);
 
+        return $this->getDataFromGuzzleResponse($response);
+    }
+
+    
 }
