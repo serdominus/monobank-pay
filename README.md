@@ -5,11 +5,7 @@
 
 Встановити бібліотеку:
 ```bash
-composer require plakidan/monobank-pay
-```
-Також зробив варіант для php5.6:
-```bash
-composer require plakidan/monobank-pay:dev-php5.6-adaptation
+composer require serdominus/monobank-pay
 ```
 
 ### Мінімальні вимоги:
@@ -74,6 +70,10 @@ print_r($result);
 $invoiceDetails = $monoPayment->successDetails('2305046jUBEj8WfyaBdB');
 print_r($invoiceDetails);
 
+//Фіскальний чек
+$result = $monoPayment->fiscalchecks('2305046jUBEj8WfyaBdB');
+print_r($result);
+
 //списати заблоковану сумму
 //зверніть увагу: списати можна тільки таку самму або меншу сумму яку ви заблокували
 $result = $monoPayment->captureHold('2305046jUBEj8WfyaBdB', 500);
@@ -121,9 +121,3 @@ if ($monoWebhook->verify($body)) {
     echo 'Дані прислав шахрай, ігноруємо';
 }
 ```
-
-#### TODO List:
-* Переробити вхідні параметри і вихідні дані на класи з описаними методами
-* Попросити в Гороховського баночку пива
-
-### P.S. Буду радий вашим pull-реквестам
