@@ -9,7 +9,7 @@
             "email": "dominus@econet.org.ua"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "dev-main",
     "require": {
         "php": ">=7.4",
         "guzzlehttp/guzzle": "^7.0",
