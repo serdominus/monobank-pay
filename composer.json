@@ -1,12 +1,12 @@
 {
-    "name": "plakidan/monobank-pay",
+    "name": "serdominus/monobank-pay",
     "description": "This is simple library for Monobank Acquiring called \"MonoPay\" based on REST API (v2304) docs located at https://api.monobank.ua/docs/acquiring.html",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "Stierlitz",
-            "email": "y.plakida@aiw.systems"
+            "name": "Dominus",
+            "email": "dominus@econet.org.ua"
         }
     ],
     "minimum-stability": "dev",
