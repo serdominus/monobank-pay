@@ -1,4 +1,8 @@
 # 🇺🇦 Проста бібліотека для еквайрінгу [MonobankPay](https://api.monobank.ua/) (MonoPay)
+
+> 🔄 Цей проєкт є форком [oneb-pub/monobank-pay](https://github.com/oneb-pub/monobank-pay)  
+> Оригінальна бібліотека ліцензована за Apache 2.0.
+
 Документація по REST API [тут](https://api.monobank.ua/docs/acquiring.html)
 
 Для ведення запитів вам знадобиться токен з особистого кабінету [https://fop.monobank.ua/](https://fop.monobank.ua/) або тестовий токен з [https://api.monobank.ua/](https://api.monobank.ua/)
